@@ -194,7 +194,7 @@ cv <- docv(param0, 500)
 print( difftime( Sys.time(), start_time, units = 'sec'))
 
 # sample submission total analysis
-submission <- read.csv("C:\\Users\\Varanus\\Documents\\MEGA\\Kaggle\\BNP Paribas Cardif\\sample_submission.csv")
+submission <- read.csv(file.choose())
 ensemble <- rep(0, nrow(test))
 
 cv <- round(cv * 1.5)
